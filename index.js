@@ -8,3 +8,5 @@
  * ---
  * 
  */
+
+exports.NGM = require('./lib/MongoLayer.js');
