@@ -1,4 +1,3 @@
-nodegame-mongodb
-================
+# nodegame-mongodb
 
-MongoDB abstraction for nodeGame
+For documentation please check the root [nodeGame](https://github.com/nodeGame/nodegame) repo.
