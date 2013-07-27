@@ -1,11 +1,10 @@
 var node = require('../nodegame-client/index.js');
-module.exports.node = node;
 
-node.setup('nodegame',{}); // should not be necessary, it also wants the empty object
+node.setup('nodegame', {}); // should not be necessary, it also wants the empty object
 
 var NGM = require('nodegame-mongodb').NGM;
 
-var ngm = new NGM();
+var ngm = new NGM(node);
 
 ngm.on('AHAH', function(a) {
     return {
@@ -14,11 +13,12 @@ ngm.on('AHAH', function(a) {
 });
 
 
-ngm.connect(function(db) {
+ngm.connect(function() {
     console.log('Connected');
 
-
+    var db = ngm.getDbObj();
     var collection = db.collection('foo');
+
     collection.find().toArray(function(err, data) {
         console.log('data in foo:', data);
         console.log();
