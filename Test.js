@@ -30,7 +30,7 @@ ngm.connect(function() {
         ngm.store({rand: randNum});
 
         debugger;
-        
+
         node.on('AHAH', function(a){
             ngm.store({ahah: a});
         });
