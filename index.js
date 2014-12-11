@@ -1,10 +1,10 @@
 /**
  * # nodegame-mongodb
  * Copyright(c) 2014 Stefano Balietti
- * MIT Licensed 
+ * MIT Licensed
  *
  * MongoDB component for nodeGame
- * 
+ *
  * http://www.nodegame.org
  * ---
  */
